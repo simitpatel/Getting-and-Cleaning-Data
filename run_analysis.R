@@ -7,7 +7,6 @@ setwd("C:/Users/sipatel/Documents/R/project3")
 install.packages("dplyr")
 install.packages("reshape2")
 library(dplyr)
-library(reshape2)
 
 #read files
 
