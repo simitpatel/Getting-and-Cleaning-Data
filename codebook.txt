@@ -1,0 +1,13 @@
+CODEBOOK
+
+    Below are a list of key variables in the run_analysis.R file included:
+    
+    fulldata <- This contains all of the training and test data from the University of California Irvine smartphone sensor study in a single data frame. The first 7,352 observations are from the training data set; the remaining 2,947 observations are from the test data set from the UCI study.
+    
+    stdmean <- A data frame that consist of only the average and standard deviation numbers included in the UCI study. Essentially, it is a subset of the aforementioned variable, fulldata.
+    
+    In the Activity column in fulldata and stdmean there are several options: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING. These activities describe the action the subject was undertaking in that specific observation. 
+    
+    A column called "Subject" contains numbers ranging from 1 to 30. There were there subjects that participated in the UCI study; these numbers each correspond to a specific subject. 
+    
+    tidy <- This data set consists of average sensor data based on the activity the subject was undertaking as well as for each of the 30 subjects. This data is based on the data in stdmean, which in turn is based on the raw data that is the UCI study. 
