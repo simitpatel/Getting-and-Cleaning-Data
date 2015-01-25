@@ -77,6 +77,7 @@ tidysubject <- group_by(stdmean,Subject) %>% summarise_each(funs(mean))
 #drop the Activity column from tidysubject and replace it with NA values to allow for binding with activity table
 
 tidysubject <- tidysubject[,-c(88)]
+
 tidysubject <- mutate(tidysubject,Activity="NA")
 
 tidyactivity <- group_by(stdmean,Activity) %>% summarise_each(funs(mean))
@@ -91,3 +92,7 @@ tidy <- rbind(tidysubject,tidyactivity)
 #put activity and subject columns next to each other for cleanliness
 
 tidy <- tidy[c(88,1:87)]
+
+#print tidy sata
+
+print(tidy)
