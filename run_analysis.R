@@ -1,6 +1,3 @@
-#set path to reference reading files into from
-
-setwd("C:/Users/sipatel/Documents/R/project3")
 
 #install packages and instantiate libraries
 
@@ -8,7 +5,7 @@ install.packages("dplyr")
 install.packages("reshape2")
 library(dplyr)
 
-#read files
+#read files (confirm location makes sense in light of your working directory)
 
 traindata <- read.table("./train/X_train.txt")
 
